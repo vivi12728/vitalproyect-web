@@ -1,44 +1,74 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VitalProyect</title>
+    <title>Salud Vital</title>
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f0f4f8;
+            background-color: #f2f7f8;
             color: #333;
         }
 
         header {
-            background-color: #3498db;
+            background-color: #1976a3;
             color: white;
             text-align: center;
-            padding: 40px;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
         }
 
         .contenedor {
-            width: 80%;
+            width: 85%;
             max-width: 900px;
-            margin: 40px auto;
+            margin: 35px auto;
+        }
+
+        .tarjeta {
             background-color: white;
             padding: 30px;
+            margin-bottom: 25px;
             border-radius: 10px;
-            box-shadow: 0 0 10px #ccc;
-            text-align: center;
+            box-shadow: 0 2px 8px #cccccc;
         }
 
         h2 {
-            color: #2c3e50;
+            color: #1976a3;
+        }
+
+        .servicios {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .servicio {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            text-align: center;
         }
 
         .boton {
             display: inline-block;
-            background-color: #3498db;
+            background-color: #1976a3;
             color: white;
             padding: 12px 25px;
             text-decoration: none;
@@ -47,42 +77,125 @@
         }
 
         footer {
+            background-color: #164b63;
+            color: white;
             text-align: center;
             padding: 20px;
-            background-color: #2c3e50;
-            color: white;
+            margin-top: 40px;
         }
+
     </style>
+
 </head>
 
 <body>
 
-<header>
-    <h1>VitalProyect</h1>
-    <p>Proyecto web para la gestión de pacientes</p>
-</header>
+    <header>
 
-<div class="contenedor">
+        <h1>Salud Vital</h1>
 
-    <h2>Bienvenido a VitalProyect</h2>
+        <p>
+            Sistema web para la gestión de pacientes
+        </p>
 
-    <p>
-        Esta página hace parte de una actividad de despliegue
-        de aplicaciones web del programa de formación del SENA.
-    </p>
+    </header>
 
-    <p>
-        El sitio fue desarrollado utilizando HTML y CSS
-        y publicado mediante GitHub Pages.
-    </p>
 
-    <a href="#" class="boton">Conocer el proyecto</a>
+    <div class="contenedor">
 
-</div>
 
-<footer>
-    <p>VitalProyect - 2026</p>
-</footer>
+        <div class="tarjeta">
+
+            <h2>Bienvenido a Salud Vital</h2>
+
+            <p>
+                Salud Vital es un proyecto web orientado a la
+                gestión de información básica de pacientes.
+            </p>
+
+            <p>
+                El sistema permite organizar la información
+                de los pacientes de una manera sencilla y ordenada.
+            </p>
+
+            <a href="#" class="boton">
+                Ingresar al sistema
+            </a>
+
+        </div>
+
+
+        <div class="tarjeta">
+
+            <h2>Gestión de pacientes</h2>
+
+            <p>
+                En este proyecto se pueden registrar datos
+                básicos de los pacientes como nombre,
+                dirección y teléfono.
+            </p>
+
+        </div>
+
+
+        <div class="tarjeta">
+
+            <h2>Servicios</h2>
+
+            <div class="servicios">
+
+                <div class="servicio">
+
+                    <h3>Pacientes</h3>
+
+                    <p>
+                        Registro y gestión de información
+                        de pacientes.
+                    </p>
+
+                </div>
+
+
+                <div class="servicio">
+
+                    <h3>Información</h3>
+
+                    <p>
+                        Consulta de los datos registrados
+                        en el sistema.
+                    </p>
+
+                </div>
+
+
+                <div class="servicio">
+
+                    <h3>Gestión</h3>
+
+                    <p>
+                        Organización sencilla de la
+                        información.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            Salud Vital - Proyecto SENA 2026
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
+```
